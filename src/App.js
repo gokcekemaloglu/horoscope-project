@@ -1,10 +1,13 @@
 
+import RecipeProvider from "./context/RecipeProvider";
+import AppRouter from "./router/AppRouter";
+
 
 function App() {
   return (
-    <div>
-      gokce
-    </div>
+    <RecipeProvider>
+      <AppRouter/>
+    </RecipeProvider>
   );
 }
 
