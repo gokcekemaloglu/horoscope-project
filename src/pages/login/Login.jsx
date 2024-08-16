@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
-  const{name,password,setName,setPassword}=useContext(RecipeContext)
+  const{name,password,setName,setPassword} = useContext(RecipeContext)
 
   const navigate = useNavigate()
 
@@ -27,7 +27,7 @@ const Login = () => {
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" required placeholder="username" onChange={(e)=>setName(e.target.value)}/>
           <StyledInput type="password" required placeholder="password"onChange={(e)=>setPassword(e.target.value)}/>
-          <StyledButton type="submit" >Login</StyledButton>
+          <StyledButton type="submit">Login</StyledButton>
         </StyledForm>
       </FormContainer>
 

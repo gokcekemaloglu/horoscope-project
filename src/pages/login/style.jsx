@@ -1,23 +1,21 @@
 import styled from "styled-components"
 
+/* resmin olduğu en dış div */
 
 export const LoginContainer = styled.div`
-  /* resmin olduğu en dış div */
-
   background-image: url("https://picsum.photos/1600/900");
   background-repeat: no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
-
   display:flex;
   justify-content: center;
   align-items: center;
 `;
 
+/* yuvarlak yer */
 
 export const FormContainer = styled.div`
-  /* yuvarlak yer */
   /* width: 600px; */
   min-width: 600px;
   height: 600px;
@@ -31,10 +29,9 @@ export const FormContainer = styled.div`
   flex-direction: column;
 `;
 
+/* yuvarlağın içindeki üstteki küçük resim */
 
 export const StyledImg = styled.img`
-  /* yuvarlağın içindeki üstteki küçük resim */
-
   width: 150px;
   margin: 1rem;
 `;
@@ -47,15 +44,17 @@ export const Header = styled.h1`
   font-size: 3rem;
 `;
 
+/* 3 kutunun olduğu form */
+
 export const StyledForm = styled.form`
-  /* 3 kutunun olduğu form */
   background: pink;
   display: flex;
   flex-direction: column;
 `;
 
+/* username giriş inputları */
+
 export const StyledInput = styled.input`
-  /* username giriş inputları */
   height: 50px;
   font-size: 2rem;
   width: 250px;
@@ -69,8 +68,9 @@ export const StyledInput = styled.input`
   text-indent: 20px;
 `;
 
+/* login butonu */
+
 export const StyledButton = styled.button`
-  /* login butonu */
   font-size: 2rem;
   font-family: "Girassol", sans-serif;
   background-color: rgba(0, 0, 0, 0.6);
