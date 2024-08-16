@@ -1,9 +1,6 @@
 import React from 'react'
 import { ContainerS, ButtonS, FormS, InputS, SelectS } from './style'
 
-
-
-
 const Header = () => {
 
 
@@ -12,9 +9,9 @@ const Header = () => {
         <div>
           <h1>Recipe App</h1>
           <FormS>
-            <InputS  type="text" placeholder="Search for a recipe"/>
+            <InputS type="text" placeholder="Search for a recipe"/>
             <ButtonS>Search</ButtonS>
-            <SelectS  name="mealType" id="mealType">
+            <SelectS name="mealType" id="mealType">
               <option value="breakfast">Breakfast</option>
               <option value="lunch" selected>Lunch</option>
               <option value="dinner">Dinner</option>

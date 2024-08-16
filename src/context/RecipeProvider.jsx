@@ -23,13 +23,12 @@ const RecipeProvider = ({children}) => {
 
   const getData = async() => {
     const {data} = await axios.get(DATA_URL)
-    setRecipes(data.hits)
-    
+    setRecipes(data.hits)    
   }
 
   return (
     <RecipeContext.Provider value={{name, setName, password, setPassword, query, setQuery, recipes, setRecipes,  getData}}>
-        {children}
+      {children}
     </RecipeContext.Provider>
   )
 }
