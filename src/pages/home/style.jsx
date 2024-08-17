@@ -3,13 +3,11 @@ import styled from "styled-components"
 /* arama yapıldığında açılan yiyecek kartlarının kutusu RECİPECARD*/
 
 export const MainContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    /* sığmayan taşsın düşsün */
-    /* flex-direction: row; */
-    justify-content: center;
-    
-
+  display: flex;
+  flex-wrap: wrap;
+  /* sığmayan taşsın düşsün */
+  /* flex-direction: row; */
+  justify-content: center;
 `
 
 /* search den sonra çıkan herbir yiyecek kart RECİPECARD*/
@@ -33,11 +31,11 @@ export const Cards = styled.div`
   }
 `
 
- /* kartlardaki yiyeceklerin adları */
+/* kartlardaki yiyeceklerin adları */
 
 export const RecipeHeader = styled.h1`
-    font-size: 1.5rem;
-    text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 `
 
 /* kartların içindeki resimler RECİPECARD */
@@ -45,10 +43,10 @@ export const RecipeHeader = styled.h1`
 export const RecipeImage = styled.img`
   height: 150px;
   border-radius: 10px;
-  border: 2px solid red;
+  border: 2px solid black;
 `
 
- /* view more  buton */
+/* view more  buton */
 
 export const RecipeButton = styled.button`
   background-color: #00adb5;
@@ -59,4 +57,10 @@ export const RecipeButton = styled.button`
   margin: 10px;
   border-radius: 3px;
   cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 10px gray;
+  }
+  &:active{
+    transform: scale(0.95);    
+  }
 `

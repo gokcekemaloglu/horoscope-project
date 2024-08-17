@@ -8,15 +8,15 @@ const Navbar = () => {
 
     
       <LogoS href="##">
-        <i>{"<Clarusway/>"}</i>
+        <i>{"<Gokce/>"}</i>
         <SpanS>Recipe</SpanS>
       </LogoS> 
 
 
       <NavbarS>
         <NavLinkk to="/">Home</NavLinkk>
-        <NavLinkk to="/register">Register</NavLinkk>
         <NavLinkk to="/about">About</NavLinkk>
+        <NavLinkk to="/register">Register</NavLinkk>
         <NavLinkk to="/login">Login</NavLinkk>
       </NavbarS>
     </HeaderS>
