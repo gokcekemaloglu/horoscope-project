@@ -10,7 +10,7 @@ export const ContainerS = styled.div`
   background-color: #00ADB5;  
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 20vh;
 `;
 
 export const FormS = styled.form`
@@ -20,7 +20,7 @@ export const FormS = styled.form`
   justify-content: center;
   border: 2px solid white;
   border-radius: 3px;
-  margin: 40px 0;
+  margin: 20px 0;
   font-family: "Girassol", cursive;
 `
 
