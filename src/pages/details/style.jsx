@@ -31,7 +31,6 @@ export const DetailPart = styled.div`
   /* height: calc(100vh - 300px); */
   @media (max-width: 1250px) {
     justify-content: center;
-
     border: 1px solid black;
   }
 `;
@@ -51,7 +50,6 @@ export const ImgContainer = styled.div`
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 20px lightgray;
-
   }
 `;
 
@@ -64,10 +62,11 @@ export const HeaderContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin: 25px;
-  padding: 10px 0;
+  padding: 5px 10px;
   font-size: 3rem;
   h1 {
     font-size: 3rem;
+    text-align: center;
   }
   img {
     width: 200px;

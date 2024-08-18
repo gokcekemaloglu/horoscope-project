@@ -34,7 +34,7 @@ const Details = () => {
                     Calories: {recipe.calories.toFixed(2)}
                 </span>
                 <span>
-                    {recipe.digest.slice(0,4).map((item,index)=>(
+                    {recipe.digest.slice(0,4).map((item, index)=>(
                         <p key={index}>
                             {item.label}: {item.total.toFixed(2)} {item.unit}
                         </p>
@@ -47,7 +47,7 @@ const Details = () => {
             </ImgContainer>
             <IngredContainer>
                     {recipe.ingredientLines.map((a, b)=>(
-                        <div>
+                        <div key={b}>
                             <p>{b + 1}- {a}</p>
                         </div>
                     ))}

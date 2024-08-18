@@ -16,7 +16,7 @@ const Home = () => {
     <div>        
       <Header/> 
 
-      {recipes.length > 0 ? (<RecipeCard/>) : <img src={homesvg} alt="Home" />}
+      {recipes.length > 0 ? (<RecipeCard/>) : <img src={homesvg} alt="Home" width="70%" height="auto"/>}
               
         
     </div>
