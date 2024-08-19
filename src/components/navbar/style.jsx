@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'
 
 export const HeaderS = styled.div`
-  background-color: #E1F1DD;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  font-family: "Girassol", cursive;
-  font-weight: 800;
-  font-style: normal;
-  font-size:2rem;
-  padding: 20px 20px;
   align-items: center;
-  
+  flex-wrap: wrap;
+  background-color: #E1F1DD;
+  height: 75px;
+  font-size: 2rem;
+  font-weight: 800;
+  /* font-style: normal; */
 `;
 
 const NavbarS = styled.div`
@@ -19,17 +19,40 @@ const NavbarS = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  gap: 5rem;
-  font-size: 24px;
+  
   font-weight: 100;
-  padding: 0 60px;
-  @media (max-width: 768px) {
+  @media (max-width: 769px) {
     /* uzun yazı olurda taşarsa gizle (hamburgere dönüşünce)*/
     flex-direction: column;
 
     width: 100%;
     /* hamburgere tıklanınca true olan props sayesinde görün, false olunca görünme */
-    display: ${({order}) => order === true ? "flex" : "none"};
+    display: ${({osman}) => osman === true ? "flex" : "none"};
+    text-align: center;
+  }
+  a {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-align: start;
+    text-decoration: none;
+    /* kelimelerin altı çizili olmasın */
+    color: #02475e;
+    
+    transition: all 0.3s ease-in;
+    font-size: 2rem;
+    font-family: "Girassol", sans-serif;
+    &:hover {
+      color: #00adb5;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      /* hamburger meydana çıktığında 
+    /* ekran küçülünce alttaki stiller olsun */
+      border: 1px solid #00adb5;
+      border-radius: 10px;
+      width: 91%;
+      background-color: #E1F1DD;
+    }
   }
 `;
 
@@ -47,8 +70,10 @@ export const Hamburger = styled.div`
 
 
 export const NavLinkk = styled(NavLink)`
+  display: flex;
   text-decoration: none;
   color: #2D5C54;
+  text-align: center;
   transition: all 0.3s ease-in;
   &:hover {
     color: rgb(0, 173, 181);
@@ -60,19 +85,23 @@ export const NavLinkk = styled(NavLink)`
     border: 1px solid #00adb5;
     border-radius: 10px;
     width: 91%;
+    background-color: #E1F1DD;
   }
 
 `
 
 export const LogoS = styled.a`
+  background-color: lightgray;
+  padding: 1rem 2rem;
   text-decoration: none;
   color: #2C3E50;
+  span{
+    color: #438A7E;
+    font-weight: 100;
+  }
 `
 
-export const SpanS = styled.span`
-  color: #438A7E;
-  font-weight: 100;
-`
+
  
 
 export default NavbarS;

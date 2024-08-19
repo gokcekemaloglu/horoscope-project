@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavbarS, { NavLinkk, LogoS, SpanS, HeaderS, Hamburger } from './style'
+import NavbarS, { NavLinkk, LogoS, HeaderS, Hamburger } from './style'
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
     
       <LogoS href="##">
         <i>{"<Gokce/>"}</i>
-        <SpanS>Recipe</SpanS>
+        <span>Recipe</span>
       </LogoS> 
 
       <Hamburger onClick={()=> setOpen(!open)}>
@@ -18,10 +18,11 @@ const Navbar = () => {
       </Hamburger>
 
 
-      <NavbarS order={open} onClick={()=>setOpen(!open)}>
+      <NavbarS osman={open} onClick={()=>setOpen(!open)}>
         <NavLinkk to="/">Home</NavLinkk>
         <NavLinkk to="/about">About</NavLinkk>
         <NavLinkk to="/register">Register</NavLinkk>
+        <a href="https://github.com/gokcekemaloglu" target="blank">Github</a>
         <NavLinkk to="/login">Login</NavLinkk>
       </NavbarS>
     </HeaderS>
